@@ -1,8 +1,16 @@
 <p align="center">有关git的简单技术
 =================
-git 下载
+
+
+  git 下载
 -----------------
->此处放网址
+<a href="https://git-scm.com/downloads">Download git</a>
+
+
+ git使用前的准备
+ ----------------
+ `git config --global user.name xxx` 添加用户名
+ `git config --global user.email mdznpc@gmail.com` 绑定邮箱
 
  git 的操作
  ---------------
@@ -12,9 +20,9 @@ git 下载
 + `git checkout`
 + `git branch`
 + `算了不列了 git --help 里都有----`
-这是英文帮助文档--
+>*这是git-help英文帮助文档-- 大概写了些自己的理解*
 -------------
->$ git --help
+> git --help
 
 These are common Git commands used in various situations:
 
@@ -57,15 +65,15 @@ grow, mark and tweak your common history
 +   `branch`     List, create, or delete branches
 + 列出，创建，删除一个分支
 +   `checkout`   Switch branches or restore working tree files
-+ 切换分支
++ 切换分支 -b参数相当于建立并切换分支
 +   `commit`     Record changes to the repository
-+ 把改动提交到版本库
++ 把改动提交到版本库 -m参数加注释
 +   `diff`       Show changes between commits, commit and working tree, etc
-+ 查看commit的差别
-+   `merge`      Join two or more development histories together
++ 查看commit的差别 文件的改动
++   `merge`      Join two or more development histories together 没用过，好像是用来分支合并的
 +   `rebase`     Reapply commits on top of another base tip
 +   `tag`        Create, list, delete or verify a tag object signed with GPG
-+ 不知道
+
 
 collaborate (see also: git help workflows)
 +   `fetch`      Download objects and refs from another repository
@@ -81,3 +89,6 @@ collaborate (see also: git help workflows)
  ---------------
  配图
 <img src=1352126739_7909.jpg>
+
+
+*配图参考了CDSN，这些命令的英文解释来源于git --help*
