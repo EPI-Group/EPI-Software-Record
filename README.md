@@ -32,12 +32,12 @@
   `* cd ~/.ssh`
   ` *ls`
   ***2.创SSH key***
-  **1.**`* ssh-keygen -t rsa -C "your_email@example.com"`==注意是大写C哦==
+  `* ssh-keygen -t rsa -C "your_email@example.com"` ==注意是大写C哦==
   参数的含义:
   -t 指定密钥类型，默认是 rsa ，可以省略。
   -C 设置注释文字，比如邮箱。
   -f 指定密钥文件存储文件名。(-f可以省略，那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。)
-  **2.**接着又会提示你输入两次密码，（该密码是你push文件的时候要输入的密码，而不是github管理者的密码，然后咱们可以不输入密码，直接按两次回车。那么咱们push的时候就不需要输入密码了）
+  接着又会提示你输入两次密码，（该密码是你push文件的时候要输入的密码，而不是github管理者的密码，然后咱们可以不输入密码，直接按两次回车。那么咱们push   的时候就不需要输入密码了）
   `Enter passphrase (empty for no passphrase):` 
   `# Enter same passphrase again:`
   然后显示代码如下:
