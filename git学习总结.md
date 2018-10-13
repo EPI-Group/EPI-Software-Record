@@ -63,3 +63,6 @@
 ## 总结
 
  <font size=5>虽然git的学习比较困难（尤其是那一长串全英文的错误提示让我不知所措），但成功的把文件上传到GitHub上的成就感还是很不错的，在之后的学习中我会继续git方面的学习，更加熟练的掌握它。
+---
+原文网址： 
+[https://blog.csdn.net/weixin_43322959/article/details/83000413](https://blog.csdn.net/weixin_43322959/article/details/83000413)
