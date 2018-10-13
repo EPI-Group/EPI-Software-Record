@@ -31,3 +31,8 @@
 2.  找到对应`id`进行回滚
 
     >`yum history undo id `
+
+## gcc源码下载地址
+
+>   [http://ftp.gnu.org/gnu/gcc/](http://ftp.gnu.org/gnu/gcc/)
+
