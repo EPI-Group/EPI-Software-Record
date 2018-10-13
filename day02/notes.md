@@ -14,4 +14,4 @@
 > `ntpdate cn.pool.ntp.org` 
 
 3.将系统时间写入硬件时间
-> hwclock --systohc
+> `hwclock --systohc`
