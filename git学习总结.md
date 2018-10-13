@@ -29,11 +29,11 @@
   1. `Changes not staged for commit` 文件位于工作区域
  ![](https://img-blog.csdn.net/20181011080426579?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
   2. `Changes to be committed` 文件位于暂存区
- ![在这里插入图片描述](https://img-blog.csdn.net/2018101108092713?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+ ![](https://img-blog.csdn.net/2018101108092713?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
   3. `nothing to commit, working tree clean` 没有什么需要提交的，说明文件位于本地仓库
  ![](https://img-blog.csdn.net/20181011081117602?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 -  `git log` 显示版本历史，时间由最近到最远
-![在这里插入图片描述](https://img-blog.csdn.net/20181010232126983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20181010232126983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 - `git reset --hard HEAD^`  版本回退，用`HEAD`表示当前版本，则`HEAD^`表示上一个版本，`HEAD^^`表示上上一个个版本，用`HEAD~100`表示当前版本的上一百个版本。
 - `git reset --hard HEAD ID` 指定回到新的版本（指上一步被回退的版本），ID指图中的==黄色数字==，这是一串16进制数字，每个人的都不相同，进行指令时只需输入前6~7位数字就够了。
 ![](https://img-blog.csdn.net/20181011082836228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMyMjk1OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
