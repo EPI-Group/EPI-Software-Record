@@ -20,6 +20,10 @@
 
 ## yum 回滚
 
+### 参考链接
+
+[https://blog.csdn.net/typa01_kk/article/details/49057073](https://blog.csdn.net/typa01_kk/article/details/49057073)
+
 1.  查看安装历史
 
     >`yum history list all`
