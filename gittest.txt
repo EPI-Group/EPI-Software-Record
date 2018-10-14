@@ -1,0 +1,90 @@
+﻿#git是啥
+入坑需谨慎
+想知道git是啥，咱得先分清另外两个，github、gitlab。
+
+>- Git-版本控制工具
+
+>- Github-一个网站，提供给用户空间创建git仓储，保存用户的一些数据文档或者代码等
+
+>- GitLab-基于Git的项目管理软件
+
+详解参照
+[Git，Github和Gitlab简介和使用方法](https://www.jianshu.com/p/8d497989f704)
+ 
+#注册GitHub
+[官网](https://github.com/)
+
+#git安装
+[git的安装](https://git-scm.com)没那么复杂，按照具体的流程，其实挺好操作的，一路next到底。
+如果你非要详细的安装教程的话，那。。。请参照[Windows下git的安装和使用](https://wk.baidu.com/view/0c479e141eb91a37f1115c7b?pcf=2&fromShare=1)
+
+
+#创建仓库
+**git init**
+This command creates an empty Git repository 即初始化仓库 
+
+
+
+常见之用例：
+#添加/修改新文件
+把一个文件放到git仓库只需两步
+- 第一步
+$**git add 文件名** 把文件添加到git仓库
+- **git add .**  把所有文件添加到git仓库   
+（注add与.间存在空格）
+- 第二步
+$**git commit -m "注释说明改动了啥"** 把文件提交到仓库
+![image.png](https://upload-images.jianshu.io/upload_images/13781263-3a9df7a917536799.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+- 其他所需命令
+**git status**查看当前仓库状态
+**git diff**查看difference，即查看修改内容
+**git log**查看历史纪录，命令显示从最近到最远的提交日志
+注：嫌麻烦可以使用命令**git log --pretty=oneline**
+#删除文件
+** git rm 文件名**
+#创建和合并分支
+ - 查看分支
+**git branch**
+- 创建分支
+**git branch 分支名**
+- 切换分支
+**git checkout 分支名**
+- 创建加切换分支
+**git checkout -b 分支名**
+- 提交分支
+**git push origin 分支名**
+注：提交前也许add ,commit 等操作
+- 合并分支
+**git checkout master 
+git merge -m 'merge  from 分支名'**
+合并分支名至master
+- 撤销合并
+**git reset --hard HEAD~**
+- 删除分支
+**git branch -d分支名**
+
+#Git 命令总结
+git config：配置相关信息
+git clone：复制仓库
+git init：初始化仓库
+git add：添加更新内容到索引中
+git diff：比较内容
+git status：获取当前项目状况
+git commit：提交
+git branch：分支相关
+git checkout：切换分支
+git merge：合并分支
+git reset：恢复版本
+git log：查看日志
+
+
+#干货
+![image.png](https://upload-images.jianshu.io/upload_images/13781263-a6974451ed205484.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#其实git help 也挺好用的
+
+##[2](http://upload-images.jianshu.io/upload_images/13781263-d7cb520de83c32da.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/720/q/50)
+
+
+
+简书链接https://www.jianshu.com/p/a34138f25fff
