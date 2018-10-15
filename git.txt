@@ -1,0 +1,49 @@
+#GIT
+**Git**是一个免费的开源分布式版本控制系统，旨处理在快速，高效地从小型到大型项目的所有事务。在快速，高效地
+[git](https://git-scm.com/)
+![对git的理解](https://upload-images.jianshu.io/upload_images/14268911-76901ae6efaab863.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)*首先说明，我是通过网易云视频进行学习的，以下图片来自视频截屏*      [人人都会git](https://study.163.com/course/introduction.htm?courseId=1003268008&utm_campaign=share&utm_medium=androidShare&utm_content=courseIntro&utm_u=1147577568&utm_source=qq)
+
+#GITHUB
+**GitHub**是通过Git进行版本控制的软件源代码托管服务
+[github](https://github.com/)
+#基本的git操作流程
+##基础设置
+###配置用户信息
+git config --global user.name 用户名
+git config --global user.email 邮箱
+ ###秘匙
+-先查看秘匙是否存在
+cd ~/.ssh
+-若出现id-rsa和id-rsa则存在
+-若无则创建ssh key
+###创建ssh key
+- ssh-keygen -t rsa -C "邮箱"
+- 用记事本方式打开文件id-rsa.pub，复制里面的内容
+- 登陆GitHub，打开"Account settings","ssh key"界面，点击“Add ssh key”,填上任意Tile,在key中粘贴刚才我们复制的内容
+ ###创建远程仓库
+登陆GitHub，点击“your repository”,点击“new”,创建你的远程仓库
+###把本地内容推到远程仓库
+下面是一些基本的命令行
+- git init 初始化仓库
+- git status 查看仓库状态
+- git add .向暂存区添加全部文件
+- git add 文件名 向暂存区提交指定文件
+- git commit -m "first commit" 暂存区的文件提交到本地仓库，first commit 是对提交的描述
+- git remote add origin 路径 添加到远程仓库
+- git push -u origin 分支 推送到远程仓库
+- git diff 工作目录与暂存区的区别
+- git diff HEAD 工作目录与本地仓库的区别
+- git diff --cached 暂存区与本地仓库的区别
+- git pull 把远程仓库里的文件拉到本地
+- git reset 回溯历史版本
+- git log 查看提交
+###分支
+- git branch 查看分支
+- git checkout 分支名 切换分支
+- git checkout -b 分支名 创建并切换分支
+- git merge 合并分支，如把a分支合并到master分支上，先切换到master分支上，再git merge a
+###跟踪分支
+本地有分支，远程也有分支，本地分支相对应的分支叫跟踪分支
+- git branch -vv 查看跟踪分支
+- git branch --set-upstream 设置跟踪分支
+https://www.jianshu.com/p/29875b8805a9
