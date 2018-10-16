@@ -71,7 +71,7 @@
 >   错误提示：
 >
 >   ```
->   计算机意外地重新启动或遇到错误。windows安装无法继续。若要安:装windows,请点击”确定"重新启动计算机，然后重新安装。
+>   计算机意外地重新启动或遇到错误。windows安装无法继续。若要安:装windows,请点击”确定“重新启动计算机，然后重新安装。
 >   ```
 >
 >   教程链接：[点击前往](https://zhidao.baidu.com/question/1704988131511838940.html?qbl=relate_question_0&word=%BC%C6%CB%E3%BB%FA%D2%E2%CD%E2%B5%D8%D6%D8%D0%C2%C6%F4%B6%AF%BB%F2%D3%F6%B5%BD%B4%ED%CE%F3%2Cwindows%B0%B2%D7%B0%CE%DE%B7%A8%BC%CC%D0%F8)
@@ -100,4 +100,4 @@
 
 *   第二步：把`Typora.desktop`文件放到`/usr/share/applications`中，需要管理员权限
 
-*   第三步：修改` ls/.local/share/applications/mimeapps.list`文件，添加行`text/x-markdown=Typora.desktop`，完成了再双击`*.md`文件的时候就是通过`Typora`打开的了。
+*   第三步：修改`~/.local/share/applications/mimeapps.list`文件，添加行`text/x-markdown=Typora.desktop`，完成了再双击`*.md`文件的时候就是通过`Typora`打开的了。
