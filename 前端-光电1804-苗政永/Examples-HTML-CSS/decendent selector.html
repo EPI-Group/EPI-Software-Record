@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--CSS 后代选择器的实例-->
+<style media="screen">
+
+
+
+    #intro .first em {
+       color: pink;
+        background-color:gray;
+    }
+</style>
+  </head>
+  <body>
+    <div id="intro">
+   <p class="first">This is a <em> paragraph.</em></p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+<!--id为intro,first中的<em>改变样式-->
+
+  </body>
+</html>
