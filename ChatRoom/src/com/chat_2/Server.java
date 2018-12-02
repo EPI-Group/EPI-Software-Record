@@ -17,7 +17,7 @@ public class Server {
 
     public Server() {
         try {
-            socket = new ServerSocket(8989);
+            socket = new ServerSocket(9876);
             started = true;
         } catch (IOException ioe) {
             System.out.println("对不起，服务器不能启动！");
@@ -78,7 +78,7 @@ public class Server {
         private Socket s = null;
         private DataInputStream dis = null;
         private DataOutputStream dos = null;
-
+        private String name=null;
         public Client(Socket s, boolean connected) {
             this.s = s;
             this.connected = connected;
@@ -93,21 +93,34 @@ public class Server {
                     dos = new DataOutputStream(s.getOutputStream());
                     ip = s.getInetAddress(); //得到IP
                     port = s.getPort();
+                    this.name=port+"";
                 }
                 while (connected) {
                     String line = dis.readUTF(); //接受消息
                     if (line.equals("exit")) {
-                        getClients().remove(this); // 当接收到推出的消息，移除客户端记录
+                        getClients().remove(this); //移除这个客户端
                         line = "再见~";
                         connected = false;
                     }
-                    System.out.println("From: (" + ip.toString() + ":" + port + "): " + line);
-                    for (int i = 0; i < getClients().size(); i++) {
-                        if (this.equals(getClients().get(i))) {  //是本机
-                            continue;
-                        } else { //
-                            getClients().get(i).dos.writeUTF("From: ("
-                                    + ip.toString() + ":" + port + "): " + line + "\n");
+                    if(line.startsWith("@")){
+                        int index=line.indexOf("：");
+                        String target=line.substring(1,index);
+                        line=line.substring(index+1);
+                        for (int i = 0; i < getClients().size(); i++) {
+                            if (target.equals(getClients().get(i).name)) {
+                                getClients().get(i).dos.writeUTF(
+                                        this.name+"悄悄对您说: " + line + "\n");
+                                break;
+                            }
+                        }
+                    }else {
+
+                        for (int i = 0; i < getClients().size(); i++) {
+                            if (this.equals(getClients().get(i))) {
+                                continue;
+                            } else { //
+                                getClients().get(i).dos.writeUTF(this.name + "对大家说: " + line + "\n");
+                            }
                         }
                     }
                 }
