@@ -60,7 +60,7 @@
     b.登录github，点击右上角的(Settings)进入，然后点击左侧菜单栏的SSH key进行添加
     c.点击 Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。
 
-    ### 三.将本地文件上传至github
+    ### 三.将本地仓库上传至github
 
     1.在文件夹出右键单击git Bush.
     2.`echo "输入仓库名">>README.md`(创建本地.md文本)
@@ -68,8 +68,9 @@
     4.`git add .`(使之加入缓存供commit提交时寻找)
     5.`git status`(每次加入缓存最好查看一下状态，若未加入显示**红色**，若被加入缓存则会变成绿色)
     6.`git commit -m "注释一些信息"`
-    7.`git remote add origin 克隆的地址`(连接远程仓库)
-    8.`git push origin master`(将本地的master推送到origin主机) 
+    7.在github上创建一个远程仓库
+    8.`git remote add origin 克隆的地址`(连接远程仓库)
+    9.`git push origin master`(将本地的master推送到origin主机) 
 ----
 **补充**：a. `git status`用于查看文件状态，
 ​                     若没被改动则输出:`On branch master`
